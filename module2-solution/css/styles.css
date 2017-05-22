@@ -35,7 +35,7 @@ section > p {
 
 /* Section headers */
 
-section > h1 {
+section > h2 {
   text-align: center;
   float: right; 
   margin-top: -1px;
