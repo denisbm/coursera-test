@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+.navbar-default {
+	background-color: #ff8000;	
+	margin-bottom: 0;
+}
+
+.navbar-brand h1 {
+  font-family: 'Barrio', cursive;
+  color: #ffff66;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+#nav-list {
+	background-color: #ffff66;
+	margin-top: 0px;
+}
+
+#sections div {
+	padding: 10px;
+}
+
+section {
+	position:relative;
+	background-color: #ffcc99;
+	padding: 15px;
+	height: 700px;
+	color: #404040;
+}
+
+section h3 {
+	font-size: 1.2em;
+	font-style: bold;
+}
+
+section hr {
+	width: 90%;
+	border-color: #ff8000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section a:hover, section a:focus {
+  text-decoration: none;
+}
+
+.link-top {
+	position: absolute;
+	bottom: 0;
+	left:0;
+  width: 100%;
+}
+
+.link-top p {
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+
+	section {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+}
