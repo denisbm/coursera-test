@@ -1,0 +1,19 @@
+<table ng-if="dirCtrl.hasItems()" class="table-striped">
+  <tr>
+    <td>Name</td>
+    <td>Short Name</td>
+    <td>Description</td>
+    <td>Actions</td>
+  </tr>
+  <tr ng-repeat="item in dirCtrl.foundItems">
+    <td>{{item.name}}</td>
+    <td>{{item.short_name}}</td>
+    <td>{{item.description}}</td>
+    <td>
+      <button id="removeButton" class="btn btn-danger btn-sm" ng-click="dirCtrl.onRemove({index: $index})">
+        Don't want this one!
+      </button>
+    <td>
+  </tr>
+</table>
+<div class="text-info h3" ng-if="dirCtrl.showNoResults()">Nothing found</div>
