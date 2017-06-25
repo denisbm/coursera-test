@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Coursera AngularJS Assignment 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <h1 class="text-center">Welcome to our Restaurant</h1>
+    <div id="content">
+      <ui-view></ui-view>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+
+    <!-- AngularJS Modules -->
+    <script src="js/menuapp.module.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/categories.controller.js"></script>
+    <script src="js/categories.component.js"></script>
+    <script src="js/items.controller.js"></script>
+    <script src="js/items.component.js"></script>
+
+    <script src="js/data.module.js"></script>
+    <script src="js/menudata.service.js"></script>
+  </body>
+</html>
