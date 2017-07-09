@@ -1,0 +1,43 @@
+<div class="container">
+  <h2 class="text-center">Your Registered Information</h2>
+  <br>
+  <div  class="text-center" ng-if="!myInfoCtrl.registered">
+    <br>
+    <span>
+      Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
+    </span>
+  </div>
+  <div ng-if="myInfoCtrl.registered">
+    <div class="form-group row">
+      <label class="col-xs-3 col-xxs-12 col-form-label">Firstname: </label>
+      <span class="col-xs-6 col-xxs-12">
+        {{myInfoCtrl.myInfo.firstname}}
+      </span>
+    </div>
+    <div class="form-group row">
+      <label class="col-xs-3 col-xxs-12 col-form-label">Lastname: </label>
+      <span class="col-xs-6 col-xxs-12">
+        {{myInfoCtrl.myInfo.lastname}}
+      </span>
+    </div>
+    <div class="form-group row">
+      <label class="col-xs-3 col-xxs-12 col-form-label">E-Mail: </label>
+      <span class="col-xs-6 col-xxs-12">
+        {{myInfoCtrl.myInfo.email}}
+      </span>
+    </div>
+    <div class="form-group row">
+      <label class="col-xs-3 col-xxs-12 col-form-label">Phone Number: </label>
+      <span class="col-xs-6 col-xxs-12">
+        {{myInfoCtrl.myInfo.phone}}
+      </span>
+    </div>
+    <div class="form-group row">
+      <label class="col-xs-3 col-xxs-12 col-form-label">Favourite Dish: </label>
+      <div class="col-xs-12 col-xxs-12">
+        <menu-item menu-item="myInfoCtrl.myInfo.favouriteItem">
+        </menu-item>
+      </div>
+    </div>
+  </div>
+</div>
